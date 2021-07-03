@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EMILIANO SALA LIVES!</title>
+        <meta charset="UTF-8">
+        <!-- All Style -->
+        <style>
+
+            /* Global properties */
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /* Body */
+
+            body {
+
+                background: #fff;
+                font-family: sans-serif;
+                padding: 0;
+                margin: 0;
+            }
+
+            /* MAIN HEADER */
+            
+            #main-header {
+
+                background: #333;
+                padding: 10px;
+                margin: 0;
+                border-bottom: 1px solid yellow;
+            }
+
+            #main-header h1 {
+
+                font-size: 30px;
+                color: #fff;
+                text-align: center;
+                text-transform: uppercase;
+                text-shadow: 1px 1px yellow;
+            }
+
+            /* SHOWCASE */
+
+            #showcase-container  {
+                max-width: 1400px;
+                margin: auto;
+                position: relative;
+                margin-bottom: -5px;  
+            }
+
+            #showcase-container  img{
+                width:100%;
+            }
+
+            /* Slider-style */
+          
+           .dot{
+               cursor: pointer;
+               height: 15px;
+               margin: 0 2px;
+               width: 15px;
+               background-color: #bbb;
+               border-radius: 50%;
+               display: inline-block;
+               transition: background-color 0.6s ease;
+           }
+           .active .dot:hover{
+               background-color: #717171;
+               
+           }
+           .fade{
+               -webkit-animation-name: fade;
+               -webkit-animation-duration: 1.5s;
+               animation-duration: 1.5s;
+               animation-name: fade;
+           }
+
+           @-webkit-keyframes fade{
+               from {opacity: .4}
+               to {opacity: 1}
+               }
+           @keyframes fade{
+            from {opacity: .4}
+               to {opacity: 1}
+           }
+            .caption{
+                color: #f2f2f2;
+                text-align: center;
+                position:absolute;
+                padding: 8px, 12px;
+                bottom: 8px;
+                width: 100%;
+                font-size: 15px;
+                display: none;
+            }
+            .my-slides{
+                display: none;
+            }
+            .prev, .next{
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width:auto;
+                margin-top: -22px;
+                padding: 16px;
+                color:white;
+                font-weight:bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0.3px;
+                user-select: none;
+            }
+            .next{
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            .prev:hover, .next:hover{
+                background-color: rgba(0, 0, 0,0.8)
+            }
+
+            /* BIOGRAPHY */
+
+            #biography a {
+                 text-decoration: none;
+                 text-transform: uppercase;
+                 color: #fff;
+                 border: 1px solid #333;
+                 background: #333;
+                 padding: 10px;
+                 border-radius: 25px;
+                 font-weight: 600;
+                 font-size: 12px;
+            }
+
+            #biography a:hover {
+
+                background: #ccc;
+                border: none;
+                color: #333;
+            }
+
+            #biography {
+
+                margin-bottom: 0;
+            }
+
+            #biography h1 {
+                background: #ccc;
+                margin: 0;
+                padding: 15px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            #biography p {
+
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-align: center;
+                padding: 20px;
+            }
+
+            /* FOOTER */
+
+            #main-footer {
+
+                background: #333;
+                padding: 20px;
+            }
+
+            #main-footer p {
+                text-align: center;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 10px;
+                font-weight: 600;
+            }
+
+            #main-footer a {
+
+                color: rgb(252, 36, 72);
+                text-decoration: none;
+            }
+
+            #main-footer a:hover {
+
+                color: rgb(238, 252, 36);
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Main - Header -->
+
+        <header id="main-header">
+            <h1>A Tribute Website to Emiliano Sala</h1>
+        </header>
+
+        <!-- Showcase -->
+
+        <section id="showcase-container">
+            <div class="my-slides fade">
+               
+                <img src="img/sala2.png"  width="100%" height="500px">
+                <div class="caption">
+                        some text here
+                    </div>
+            </div>
+            <div class="my-slides fade">
+                   
+                    <img src="img/sala3.png"  width="100%" height="500px">
+                    <div class="caption">
+                            some text here
+                        </div>
+                </div>
+                <div class="my-slides fade">
+                       
+                        <img src="img/sala4.png"  width="100%" height="500px">
+                        <div class="caption">
+                                some text here
+                            </div>
+                    </div>
+                    <div class="my-slides fade">
+                          
+                            <img src="img/sala1.png"  width="100%" height="500px">
+                            <div class="caption">
+                                    some text here
+                                </div>
+                        </div>
+                        <a  class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a  class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- <ul >
+                <li></li>
+                <li><img src="img/sala3.png"  height="400px" width="1000px"></li>
+                <li><img src="img/sala4.png"  height="400px" width="1000px"></li>
+                <li><img src="img/sala1.png"  height="400px" width="1000px"></li>
+            </ul> -->
+            <!-- <img src="img/sala2.png"  height="400px" width="1000px"> -->
+          
+        </section>
+
+        <!-- <div style="text-align: center">
+                <span class="dot" onclick="currentslide(1)"></span>
+                <span class="dot" onclick="currentslide(2)"></span>
+                <span class="dot" onclick="currentslide(3)"></span>
+                <span class="dot" onclick="currentslide(4)"></span>
+                </div> -->
+
+        <!-- Biography -->
+
+        <section id="biography">
+            <h1>Early Life</h1>
+            <p>
+                Sala was born in the town of Cululu, Santa Fe Province, Argentina, to
+                Horacio Sala and Mercedes Taffarel.
+                His father worked as a truck driver; the family later moved
+                to Progreso. He had a brother, Dario, and a sister, Romina.
+                He was a fan of Independiente and, while he was growing up,<br />
+                he studied footage of his favorite footballer, Gabriel Batistuta.<br /><br />
+                <a href="https://en.m.wikipedia.org/wiki/Emiliano_Sala" target="_blank">read more</a>
+            </p>
+            <h1>Career</h1>
+            <p>
+                Sala began playing football for San Martin de Progreso,
+                where he remained until he was 15 years old.
+                He then moved to San Francisco, Cordoba to play at
+                football school Proyecto Crecer after being spotted
+                by a scout.
+                The club was directly affiliated with Spanish club
+                RCD Mallorca and French side FC Girondins de Bordeaux,
+                scouting local players in the area.
+                After joining the club, he moved into a boarding house
+                with other players from the club's youth system.<br />
+                He played two Preferente matches for Spanish club
+                CD Soledad B in November 2007.<br /><br />
+                <a href="https://en.m.wikipedia.org/wiki/Emiliano_Sala" target="_blank">read more</a>
+
+            </p>
+            <h1>His Demise</h1>
+            <p>
+                After completing his medical at Cardiff, Sala returned
+                to Nantes on the morning of 19 January on a plane arranged
+                by football agent Mark Mckay.
+                His intention was to return to Cardiff on 21 January in order
+                to attend his first training session with his new club
+                the following morning.
+                Sala had been invited to attend Cardiff's match against<br />
+                Newcastle United by manager Neil Warnock,<br />
+                but he returned to France to say goodbye to his Nantes teammates<br />
+                and collect personal belongings.<br /><br />
+                <a href="https://en.m.wikipedia.org/wiki/Emiliano_Sala" target="_blank">read more</a>
+            </p>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer id="main-footer">
+            <p>
+                Built with love by <a href="https://www.onetwolyrics.com/about-us" target="_blank">Adewale</a>
+            </p>
+            <p>Copyright &copy; 2019.</p>
+        </footer>
+    </body>
+
+    <!-- JavaScript -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            var i;
+            var slides= document.getElementsByClassName("my-slides");
+for (let index = 0; index < slides.length; index++) {
+    var element = slides[index];
+    element.style.display="none";
+    
+}
+slideIndex++;
+if (slideIndex > slides.length) {
+    slideIndex=1;
+}
+slides[slideIndex- 1].style.display="block";
+setTimeout(showSlides,2000);
+        }
+       
+
+    </script>
+</html>

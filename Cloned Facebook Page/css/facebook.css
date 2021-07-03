@@ -1,0 +1,232 @@
+body {
+	font-family: helvetical, sans-serif, cursive, arial;
+	background-color:#f2f2f2;
+	margin:0;
+	padding:0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+
+	text-decoration: underline;
+}
+
+.header {
+	background-color: #3b5998;
+	height: 12.2%;
+	width: 100%;
+	font: helvetical;	
+	border: 1px solid darkblue;
+}
+
+#icon {
+
+	position: relative;
+	top: 18px;
+	left: 180px;
+	font-size: 40px;
+	color: #fff;
+
+}
+
+#username {
+
+	position: absolute;
+	top: 2%;
+	left: 55.2%;
+	font-size: 15px;
+	color: #fff;
+}
+
+#userpass {
+
+	position: absolute;
+	top: 2%;
+	left:69.5%;
+	font-size: 15px;
+	color: #fff;
+}
+
+#login {
+
+	position: absolute;
+	top: 6%;
+	left:55%;
+
+}
+
+#help {
+
+	position: absolute;
+	top:60.5px;
+	left:69.4%;
+	font-size:10.1px;
+	text-decoration: none;
+	color: #ccc;
+
+}
+
+#keeppass {
+
+	position: absolute;
+	top: 58px;
+	left:54.6%;
+}
+
+#Remember {
+
+	position: absolute;
+	top: 60.5px;
+	left: 56%;
+	font-size: 10.1px;
+	color: #ccc;
+}
+
+#button {
+
+	background-color: #627AAD;
+	color: #fff;
+	border: 0.2px solid darkblue;
+	font-weight: 5;
+}
+
+#button:hover {
+
+	background-color: #3b5998;
+}
+
+
+.left {
+	width: 45%;
+	position: absolute;
+	top: 100px;
+	left: 180px;
+}
+
+#fbmotto {
+	font-size: 16px;
+	word-spacing: 2px;
+	font-weight: 700;
+	width: 300px;
+	display: block;
+	font-family: sans-serif;
+	color: #627AAD;
+
+}
+
+.image {
+
+	position: relative;
+	top: 20px;
+
+}
+
+.right {
+
+	width: 50%;
+	position: absolute;
+	top: 20%;
+	left: 53%;
+}
+
+#righthead {
+
+	font-family: sans-serif, helvetical, arial, cursive;
+	font-weight: 700;
+	color: #333;
+	font-size: 45px;
+}
+
+#rightsub {
+	
+	font-family: sans-serif, helvetical, arial, cursive;
+	font-weight: 500;
+	color:#333;
+	font-size: 20px;
+
+}
+
+#regfirstname {
+
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#regsurname {
+
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.registration_form {
+
+	width: 56%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.dob {
+	padding: 3px;
+	border: 1px solid #ccc;
+}
+
+.regbirth {
+
+	font-family: helvetical, sans-serif, cursive, arial;
+	font-weight: 527;
+}
+
+#birthwhy  a {
+
+	position: absolute;
+	left: 28%;
+	font-size: 10.5px;
+	color: #627AAD;
+}
+
+#reginfo {
+
+	font-size: 10.2px;
+	color: #333;
+}
+
+#reginfo a {
+
+	color: #627AAD;
+}
+
+.sign_up {
+
+	width: 20%;
+	background-color: green;
+	padding: 5px;
+	font-weight: 700;
+	color: #fff;
+	border: 1px solid #ccc;
+
+}
+
+.sign_up:hover {
+
+	background-color: #ccc;
+	color: #000;
+}
+
+.createpg {
+	font-size: 13px;
+	color: #333;
+	font-weight: 700;
+}
+
+.createpg a {
+
+	color: #627AAD;
+}
+
+
